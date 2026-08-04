@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 const PORT = 3000;
 
-// app.set("trust proxy", 1);
+app.set("trust proxy", 1);
 
 app.get("/app", (req, res) => {
   res.send(`
